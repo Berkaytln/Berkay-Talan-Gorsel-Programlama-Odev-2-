@@ -1,0 +1,26 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Yapilacaklar"
+             Title="Yapılacaklar">
+    <StackLayout Padding="20">
+        
+        <Entry x:Name="NoteEntry" Placeholder="Yapılacak notunuzu girin..." />
+        <Button Text="Ekle" Clicked="OnAddNoteClicked" />
+
+        
+        <CollectionView x:Name="NotesCollectionView">
+        <CollectionView.ItemTemplate>
+        <DataTemplate>
+        <StackLayout Orientation="Horizontal" Padding="5">
+        <Label Text="{Binding}" FontSize="Medium" VerticalOptions="Center" />
+        <Button Text="Sil" Clicked="OnDeleteNoteClicked" 
+          CommandParameter="{Binding}" 
+          BackgroundColor="Red" 
+          TextColor="White" 
+          Margin="10,0,0,0"/>
+         </StackLayout>
+         </DataTemplate>
+         </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

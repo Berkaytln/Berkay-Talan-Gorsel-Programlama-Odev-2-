@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage"
+             Title="Ana Sayfa">
+    <ScrollView>
+        <StackLayout Padding="20">
+        
+        <Label Text="Ana Sayfa" FontSize="24" HorizontalOptions="CenterAndExpand" />
+
+        
+        <Image x:Name="profileImage"  WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" />
+        <Button Text="Resim Yükle"   Clicked="OnImageUploadClicked" HorizontalOptions="Center" />
+
+        
+        <Label Text="Berkay Talan" FontSize="Header" HorizontalOptions="Center" />
+        <Label Text="No: 24110310046" FontSize="Header" HorizontalOptions="Center" />
+
+        
+        <Label Text="Bartın Üniversitesi Bilgisayar Mühendisliği" FontSize="Large" HorizontalOptions="Center" />
+
+        
+        <Label Text="ÖDEV-2" FontSize="50" HorizontalOptions="Center" />
+
+      
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
