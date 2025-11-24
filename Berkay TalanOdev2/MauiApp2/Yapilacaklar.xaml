@@ -4,7 +4,7 @@
              Title="Yapılacaklar">
     <StackLayout Padding="20">
         
-        <Entry x:Name="NoteEntry" Placeholder="Yapılacak notunuzu girin..." />
+        <Entry x:Name="NoteEntry" Placeholder="Lutfen Yapilacak notunuzu giriniz..." />
         <Button Text="Ekle" Clicked="OnAddNoteClicked" />
 
         
