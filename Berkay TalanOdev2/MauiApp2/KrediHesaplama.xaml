@@ -4,7 +4,7 @@
 
     <StackLayout Padding="20">
 
-        <Label Text="Kredi Türü Seçin:" FontSize="20" />
+        <Label Text="Lutfen Kredi Türü Seciniz :" FontSize="20" />
         <Picker x:Name="loanTypePicker" Title="Kredi Türleri">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
@@ -19,10 +19,10 @@
         <Label Text="Kredi Tutarı:" FontSize="20" />
         <Entry x:Name="loanAmountEntry" Keyboard="Numeric" />
 
-        <Label Text="Vade (Ay):" FontSize="20" />
+        <Label Text="Vade ( Ay ):" FontSize="20" />
         <Entry x:Name="loanTermEntry" Keyboard="Numeric" />
 
-        <Label Text="Faiz Oranı (%)Ondalıklı ise virgül kullanın:" FontSize="20" />
+        <Label Text="Faiz ( % ) Orani Ondalikli ise virgul kullanin:" FontSize="20" />
         <Entry x:Name="interestRateEntry" Keyboard="Numeric" />
 
         <Button Text="Hesapla" Clicked="OnCalculateClicked" />
