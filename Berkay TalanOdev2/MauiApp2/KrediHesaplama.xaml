@@ -8,8 +8,8 @@
         <Picker x:Name="loanTypePicker" Title="Kredi Türleri">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
-                    <x:String>İhtiyaç Kredisi</x:String>
-                    <x:String>Taşıt Kredisi</x:String>
+                    <x:String>İhtiyac Kredisi</x:String>
+                    <x:String>Tasit Kredisi</x:String>
                     <x:String>Konut Kredisi</x:String>
                     <x:String>Ticari Kredi</x:String>
                 </x:Array>
